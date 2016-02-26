@@ -1,6 +1,6 @@
 import fs from 'fs'
-import Table from './Table'
-import mjml from 'mjml'
+// import Table from './Table'
+import mjml from '../mjml/lib'
 
 /*
   Compile an mjml string
