@@ -7,9 +7,6 @@ import {
   registerElement,
 } from 'mjml'
 
-/*
- * Wrap your dependencies here.
- */
 const {
   text: MjText,
 } = elements;
@@ -20,9 +17,6 @@ const NAME = 'table'
   tagName: 'mj-table',
   content: '',
 
-  /*
-   * These are your default css attributes
-   */
   attributes: {
     'align': 'left',
     'color': '#000',
@@ -34,18 +28,11 @@ const NAME = 'table'
 })
 class Table extends Component {
 
-  /*
-   * Build your styling here
-   */
   getStyles() {
     const { mjAttribute, color } = this.props
 
     return _.merge({}, this.constructor.baseStyles, {
       table: {
-      /*
-       * Get the color attribute
-       * Example: <mj-table color="blue">content</mj-table>
-       */
         color: mjAttribute('color'),
         fontFamily: mjAttribute('font-family'),
         fontSize: mjAttribute('font-size'),
